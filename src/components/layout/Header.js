@@ -9,6 +9,9 @@ import ourStoryImage from '../../images/header-images/Our-Story.svg'
  
 
 function Header(){
+
+    console.log(document.querySelectorAll('.drop-toggle'))
+
     return(
         <header>
             <div className="clone-notification">
@@ -46,34 +49,80 @@ function Header(){
                         <p>Find Food</p>
                     </a>
 
-                    <a href='#'>
+                    <a className='drop-toggle' href='#'>
                         <img src={getHelpImage}></img>
-                        <p>Get Help</p>
+                        <div>
+                            <p>Get Help</p>
+                            <span>^</span>
+                        </div>
                     </a>
 
-                    <a href='#'>
+                    <a className='drop-toggle' href='#'>
                         <img src={takeActionImage}></img>
-                        <p>Take Action</p>
+                        <div>
+                            <p>Take Action</p>
+                            <span>^</span>
+                        </div>
                     </a>
 
-                    <a href='#'>
+                    <a className='drop-toggle' href='#'>
                         <img src={volunteerImage}></img>
-                        <p>Volunteer</p>
+                        <div>
+                            <p>Volunteer</p>
+                            <span>^</span>
+                        </div>
                     </a>
 
-                    <a href='#'>
+                    <a className='drop-toggle' href='#'>
                         <img src={ourStoryImage}></img>
-                        <p>Our Story</p>
+                        <div>
+                            <p>Our Story</p>
+                            <span>^</span>
+                        </div>
                     </a>
-                    <a href='#' id='header-donation-button-con'>
+                    <a className='drop-toggle' href='#' id='header-donation-button-con'>
                         <button>
                             <p>Donate</p>
                         </button>
                     </a>
                 </nav>
             </div>
+            <div className='header-dropdowns-con'>
+                <div className='get-help-drop drops-con'>
+                    <div className='drop-left'>
+                        <a className='free-food-main' href='#'>Free Food & Services</a>
+                        <a className='apply-for-snap-main' href='#'>Apply For Snap Food Services</a>
+                        <a href='#'>Job Training</a>
+                        <a href='#'>Healthy Recipes</a>
+                    </div>
+                    <div className='drop-right'>
+                        <div className='free-food-links drop-links'>
+                            <h3>Free Foods & Services</h3>
+                            <p>Find a food pantry near you and explore the free services that can help you and your family.</p>
+                            <a href='#'>Summer Feeding Programs for Kids</a>
+                            <a href='#'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div className='take-action-drop drops-con'>
+                    <div className='drop-left'>
+                        <a href='#'>Donate</a>
+                        <a href='#'>Volunteer</a>
+                    </div>
+                    <div className='drop-right'>
+                        <div className='free-food-links drop-links'>
+                            <h3>Free Foods & Services</h3>
+                            <p>Find a food pantry near you and explore the free services that can help you and your family.</p>
+                            <a href='#'>Summer Feeding Programs for Kids</a>
+                            <a href='#'>Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
     )
+
+
 }
 
 export default Header

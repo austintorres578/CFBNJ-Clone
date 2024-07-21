@@ -81,7 +81,7 @@
 .main-header{
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: solid 1px black;
+    border-bottom: solid .05px lightgray;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
@@ -106,6 +106,20 @@
     letter-spacing: 1px;
     font-size: 14px;
     margin-right: 15px;
+}
+.main-header nav a div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.main-header nav a div span{
+    position: absolute;
+    transform:rotate(180deg);
+    padding-bottom: 3px;
+    color: #f58438;
+    right: -14%;
+
+
 }
 .main-header nav img{
     height: 50px;
@@ -155,3 +169,93 @@
     font-size: 12px;
     
 }
+.header-dropdowns-con{
+    width: 800px;
+    margin-left: auto;
+    height: 400px;
+    position: relative;
+}
+.drops-con{
+    box-shadow: 2px 6px 11px rgba(0, 0, 0, 0.3);
+    width: 800px;
+
+}
+.drop-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: white;
+    width: 35%;
+    padding: 30px 10px 30px 30px;
+    position: relative;
+    z-index: 1;
+}
+.drop-left a{
+    text-align: left;
+    margin-bottom: 25px;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: fit-content;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight:500;
+    letter-spacing: 1px;
+}
+.drop-left a:after{
+    content:'';
+    border: solid 1px #f58438;
+    background-color: #f58438;
+    height: .25px;
+    width: .25px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: .5s;
+}
+.drop-left a:hover:after{
+    width: 100%;
+    opacity: 1;
+}
+.drop-right{
+    background-color:#f2f2f2;
+    height: 400px;
+    width: 65%;
+    box-shadow: -3px 2px 7px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+    position: relative;
+}
+.drops-con{
+    display: flex;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+.drop-links{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    text-align: left;
+    padding: 30px 10px 30px 30px;
+    border: solid 1px red;
+    height: 340px;
+    
+}
+.drop-links h3{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.drop-links p{
+    font-weight: bold;
+    font-size: 12px;
+}
+.drop-links a{
+    color: #f58438;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
