@@ -1,0 +1,29 @@
+footer{
+    background-color: #1d262d;
+    padding-top: 50px;
+}
+footer a{
+    transform: .5s;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    text-transform: uppercase;
+}
+footer a:hover{
+    color: #f58438;
+}
+.footer-top{
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    color: white;
+}
+.footer-top div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 200px;
+}
+.footer-top div p{
+    margin-top: 0px;
+}

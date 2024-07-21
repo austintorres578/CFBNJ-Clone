@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+.page-wrap{
+  padding-top: 250px;
+}
+.padding{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.orange-button{
+  background-color: #f58438;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: .5s;
+}
+.orange-button:hover{
+  background-color:white;
+  color: #f58438;
+}
