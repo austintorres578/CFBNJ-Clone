@@ -254,6 +254,7 @@ header{
     
 }
 .drop-links h3{
+    margin-top:0px;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -268,4 +269,7 @@ header{
     font-size: 12px;
     margin-bottom: 10px;
 }
-
+.drop-links div{
+    display:flex;
+    flex-direction: column;
+}

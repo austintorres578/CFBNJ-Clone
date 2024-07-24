@@ -1,20 +1,39 @@
 footer{
     background-color: #1d262d;
     padding-top: 50px;
+    padding-left: 2%;
+    padding-right: 2%;
 }
-footer a{
+footer a,li{
+    transform: .5s;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+footer a:hover{
+    color: #f58438;
+}
+
+footer ul li a{
     transform: .5s;
     color: white;
     text-decoration: none;
     transition: .5s;
     text-transform: uppercase;
 }
-footer a:hover{
+footer ul li a:hover{
     color: #f58438;
+}
+footer ul{
+    list-style: none;
+    padding-left: 0px;
 }
 .footer-top{
     display: flex;
     align-items: start;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     color: white;
 }
@@ -26,4 +45,27 @@ footer a:hover{
 }
 .footer-top div p{
     margin-top: 0px;
+}
+.footer-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-bottom-logos img{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+.footer-bottom ul{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0px;
+}
+.footer-bottom li{
+    margin-right: 10px;
+}
+.footer-copyright{
+    padding-bottom: 20px;
+    color: white;
 }
