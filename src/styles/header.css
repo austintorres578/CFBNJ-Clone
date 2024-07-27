@@ -183,8 +183,8 @@ header{
 .header-dropdowns-con{
     width: 800px;
     margin-left: auto;
-    height: 400px;
     position: relative;
+    height: 0px;
 }
 .drops-con{
     box-shadow: 2px 6px 11px rgba(0, 0, 0, 0.3);
