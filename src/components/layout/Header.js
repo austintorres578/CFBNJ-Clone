@@ -226,6 +226,9 @@ function Header(){
                     </div>
                 </div>
             </div>
+            <div className='mobile-nav'>
+                <button>Menu</button>
+            </div>
         </header>
     )
 }

@@ -1,3 +1,40 @@
+@media(max-width:1050px){
+    .page-wrap{
+        padding-top: 105px !important;
+    }
+    .hover-button-con{
+        height: auto !important;
+        padding: 30px;
+    }
+    .hover-button-con .padding{
+        width: 100% !important;
+        transform: none !important;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        flex-wrap: wrap;
+    }
+    .hover-button-con .padding a{
+        width: 550px !important;
+    }
+    .hero-map{
+        flex-direction: column-reverse;
+    }
+    .hero-map div{
+        width: 100% !important;
+    }
+    .hero-map div iframe{
+        border-radius: 20px 20px 0px 0px !important;
+    }
+    .hero-map-con > .padding:first-child{
+        padding-bottom: 90px !important;
+    }
+    .hero-content{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 550px !important;
+    }
+}
 .hero{
     min-height: 700px;
     background:url('../images/home-images/home-hero-image.jpg');
@@ -21,11 +58,12 @@
     
 }
 .float-boxes{
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 65px;
+    padding-bottom: 65px;
 }
 .float-boxes .padding{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -37,6 +75,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 25px;
 }
 .float-boxes .padding div h2{
     margin-bottom: 0px;
@@ -85,8 +124,8 @@
     padding-right: 40px;
 }
 .our-impact .padding div img{
-    height:150px;
-    width: auto;
+    height:auto;
+    width: 100%;
     object-fit: contain;
 }
 .highlights{
@@ -190,18 +229,20 @@
 }
 .how-you-can-help-con{
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     background:url('../images/home-images/helpBackground.svg');
-    background-position: 10% 93%;
+    background-position: 50% 95%;
     background-repeat: no-repeat;
 }
 .help-boxes{
     display: flex;
     align-items: center;
-    justify-content:center ;
+    justify-content:center;
+    flex-wrap: wrap;
 }
 .help-boxes a{
     position: relative;
+    margin: 25px;
 }
 .help-boxes a img{
     margin-left: auto;
@@ -316,7 +357,7 @@
     position: relative;
 }
 .hero-map-con > .padding:first-child{
-    padding-bottom: 180px;
+    padding-bottom: 220px;
 }
 .hero-map-con h1{
     display: flex;
@@ -352,6 +393,9 @@
 .hero-map-con .hero-map-text button{
     width: 95%;
 }
+.hero-map h3{
+    margin-bottom: 0px;
+}
 .hero-map h3, .hero-map p,.hero-map a{
     padding-left: 30px;
     padding-right: 30px;
@@ -363,14 +407,14 @@
 }
 .hover-button-con{
     background-color: white;
-    height: 200px;
+    height: 300px;
 }
 .hover-button-con .padding{
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    top: 80%;
+    top: 75%;
     left: 50%;
     width: 82%;
     transform: translate(-50%,-50%);
@@ -384,9 +428,10 @@
 }
 .hover-button-con a:after{
     position: absolute;
-    top: 90%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,450%); */
+    top: 100%;
     content:"Apply";
     opacity: 0;
     pointer-events: none;
@@ -407,8 +452,8 @@
 }
 .hover-button-con a:hover:after{
     pointer-events: 1;
+    top: 70%;
     opacity: 1;
-    top: 73%;
 }
 .hover-button-con a p{
     text-align: left;
@@ -426,9 +471,11 @@
 .home-bottom-mail-con .padding{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .home-bottom-mail-con .padding div{
-    width: 50%;
+    width: 430px;
 }
 .home-bottom-mail-con .padding div h1,
 .home-bottom-mail-con .padding div p{
@@ -452,4 +499,5 @@
 .home-bottom-mail-con .stay-informed-email button{
     left: 43%;
 }
+
 

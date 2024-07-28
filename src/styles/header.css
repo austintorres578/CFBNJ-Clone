@@ -1,3 +1,17 @@
+@media(max-width:1050px){
+    .header-top{
+        display: none !important;
+    }
+    .main-header{
+        display: none !important;
+    }
+    .drops-con{
+        display: none !important;
+    }
+    .mobile-nav{
+        display: flex !important;
+    }
+}
 header{
     position: fixed;
     width: 100%;
@@ -272,4 +286,24 @@ header{
 .drop-links div{
     display:flex;
     flex-direction: column;
+}
+.mobile-nav{
+    height: 50px;
+    display: none;
+    align-items: center;
+    justify-content: end;
+    background-color: white;
+    padding-left: 45px;
+    padding-right: 45px;
+    box-shadow: 10px 3px 15px rgba(0, 0, 0, 0.2);
+}
+.mobile-nav button{
+    background: url('../images/header-images/mobile-ham-image.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: transparent;
+    border: none;
+    width: 75px;
+    height: 75px;
 }

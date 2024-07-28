@@ -15,6 +15,9 @@ import bottomMailImage from '../../images/home-images/stay-informed.svg'
 import '../../styles/home.css'
 
 function Home(){
+
+    
+
     return(
         <div>
         <section className="hero">
