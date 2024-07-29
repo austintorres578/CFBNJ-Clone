@@ -1,3 +1,20 @@
+@media(max-width:1200px){
+    #floating-box-pad{
+        position: relative;
+        top: auto;
+        left: auto;
+        transform:  none;
+        width: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #home-hero{
+        min-height: 500px;
+    }
+    #float-gray-text{
+        margin-top:50px;
+    }
+}
 @media(max-width:1050px){
     .page-wrap{
         padding-top: 105px !important;
@@ -34,9 +51,12 @@
         margin-right: auto;
         max-width: 550px !important;
     }
+    .gray-con{
+        height: fit-content !important;
+    }
 }
 .hero{
-    min-height: 700px;
+    min-height: 825px;
     background:url('../images/home-images/home-hero-image.jpg');
     background-position: center center;
     background-size: cover;
@@ -60,12 +80,21 @@
 .float-boxes{
     padding-top: 65px;
     padding-bottom: 65px;
+    position: relative;
 }
 .float-boxes .padding{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+}
+.float-boxes > .padding:first-child{
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    padding: 0px;
 }
 .float-boxes .padding div{
     height: 380px;
@@ -76,6 +105,7 @@
     flex-direction: column;
     justify-content: center;
     margin: 25px;
+    background-color: white;
 }
 .float-boxes .padding div h2{
     margin-bottom: 0px;
@@ -95,7 +125,7 @@
     display:flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 200px;
 }
 
 .gray-con h2{

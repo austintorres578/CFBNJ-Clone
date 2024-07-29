@@ -3,6 +3,7 @@ import '../../styles/footer.css'
 import footerLogo from '../../images/footer-images/footer-logo.svg'
 import charityImage from '../../images/footer-images/charity-nav.png'
 import partnerFoodImage from '../../images/footer-images/Partner-Food-Bank-of-FA_1-c-White.png'
+import footerSocialPlace from '../../images/footer-images/footer-socials.jpeg'
 
 function Footer(){
     return(
@@ -11,7 +12,7 @@ function Footer(){
                 <div>
                     <img src={footerLogo}></img>
                 </div>
-                <div>
+                <div className='footer-info'>
                     <p>HEADQUARTERS
                         <br></br>
                          31 EVANS TERMINAL 
@@ -90,17 +91,13 @@ function Footer(){
                         <li><a href='#'>Contact Us</a></li>
                     </ul>
                     <ul>
-                        <li><a href='#'></a><img src='#'></img></li>
-                        <li><a href='#'></a><img src='#'></img></li>
-                        <li><a href='#'></a><img src='#'></img></li>
-                        <li><a href='#'></a><img src='#'></img></li>
-                        <li><a href='#'></a><img src='#'></img></li>
-                        <li><a href='#'></a><img src='#'></img></li>
+                        <li className='footer-social'><a href='#'></a><img src={footerSocialPlace}></img></li>
                     </ul>
                 </div>
             </div>
             <div className='footer-copyright'>
                 <p>NJ food banks and CFBNJ’s Partner Distribution Organizations: FoodBank of South Jersey, Fulfill Monmouth & Ocean, Mercer Street Friends, NORWESCAP.</p>
+                <br></br>
                 <p>©2024 Community FoodBank of New Jersey. All rights reserved. The Community FoodBank of New Jersey is a nonprofit 501(c)(3) public charity (Tax ID: 222 423 882).</p>
             </div>
         </footer>

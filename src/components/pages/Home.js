@@ -20,7 +20,7 @@ function Home(){
 
     return(
         <div>
-        <section className="hero">
+        <section id='home-hero' className="hero">
             <div className='hero-row padding'>
                 <div className='hero-content'>
                     <h1>Give kids the best summer ever. $1 = 3 meals.</h1>
@@ -29,7 +29,7 @@ function Home(){
             </div>
         </section>
         <section className="float-boxes">
-            <div className='padding'>
+            <div id='floating-box-pad' className='padding'>
                 <div>
                     <img src={findFoodImage}></img>
                     <h2>Find Food</h2>
@@ -49,7 +49,7 @@ function Home(){
                     <a href='#'><button className='orange-button'>Donate</button></a>
                 </div>
             </div>
-            <div className='gray-con'>
+            <div id='float-gray-text' className='gray-con'>
                 <div className='padding'>
                     <h2>We serve as a champion for addressing root causes of hunger, delivering neighbor-centric solutions, and fostering collaborative partnerships across all sectors of society for New Jersey.</h2>
                 </div>
