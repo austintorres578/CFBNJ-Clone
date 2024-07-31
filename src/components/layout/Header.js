@@ -22,6 +22,19 @@ let exampleObj = {
 //     links:['Hunger In New Jersey','Our History','Mission, Vision, Values','General FAQs']
 // }
 
+function hideMobileMenu(){
+    document.querySelector('.mobile-nav-content-con').style.backgroundColor="rgba(0, 0, 0, 0.0)";
+    document.querySelector('.mobile-nav-content').style.width="0px";
+    document.querySelector('.mobile-nav-content').style.pointerEvents='none';
+}
+
+function revealMobileMenu(){
+    document.querySelector('.mobile-nav-content-con').style.backgroundColor="rgba(0, 0, 0, 0.473)";
+    document.querySelector('.mobile-nav-content').style.width="350px";
+    document.querySelector('.mobile-nav-content').style.pointerEvents='all';
+    
+}
+
 function revealRightLinks(Array){
 
     let resultArray = []
@@ -227,7 +240,42 @@ function Header(){
                 </div>
             </div>
             <div className='mobile-nav'>
-                <button>Menu</button>
+                <button onClick={revealMobileMenu}>Menu</button>
+            </div>
+            <div className='mobile-nav-content-con'>
+                <div className='mobile-nav-content'>
+                    <div id='mobile-close-button-con'>
+                        <button onClick={hideMobileMenu} className='mobile-close-button'>X</button>
+                    </div>
+                    <div>
+                        <a href='#'>Home</a>
+                    </div>
+                    <div>
+                        <a href='#'>Home</a>
+                    </div>
+                    <div>
+                        <a href='#'>Home</a>
+                        <button>➔</button>
+                    </div>
+                    <div>
+                        <a href='#'>Home</a>
+                        <button>➔</button>
+                    </div>
+                    <div>
+                        <a href='#'>Home</a>
+                        <button>➔</button>
+                    </div>
+                    <div>
+                        <a href='#'>Home</a>
+                        <button>➔</button>
+                    </div>
+                    <div>
+                        <a href='#'>Home</a>
+                    </div>
+                    <div>
+                        <a href='#'>Home</a>
+                    </div>
+                </div>
             </div>
         </header>
     )
