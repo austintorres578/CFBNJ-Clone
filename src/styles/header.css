@@ -19,11 +19,25 @@ header{
 }
 .clone-notification{
     background-color: yellow;
+    padding-bottom: 20px;
 }
 .clone-notification h3{
     margin: 0px;
     padding-top: 15px;
-    padding-bottom: 15px;
+}
+.clone-notification p{
+    margin-bottom: 0px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+.clone-notification div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clone-notification div a{
+    margin-right: 10px;
+    padding-top: 10px;
 }
 .header-top{
     display: flex;
@@ -331,8 +345,19 @@ header{
     padding-left: 50px;
     padding-top: 30px;
 }
+.mobile-nav-content div button{
+    border: none;
+    background: none;
+    color: gray;
+}
 .mobile-nav-content div a{
     margin-right: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 #mobile-close-button-con{
     display:flex;

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, setState } from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/header.css'
 
 import headerLogo from '../../images/global images/cfbnj-logo.svg'
@@ -9,12 +10,6 @@ import volunteerImage from '../../images/header-images/Volunteer.svg'
 import ourStoryImage from '../../images/header-images/Our-Story.svg'
 
 // Select all dropdown elements
-
-let exampleObj = {
-    header:'',
-    subText:'',
-    links:[]
-}
 
 // let exampleObj = {
 //     header:'ABOUT US',
@@ -101,6 +96,12 @@ function Header(){
         <header>
             <div className="clone-notification">
                 <h3>THIS IS A CLONE OF <a href='https://cfbnj.org/'> CFBNJ.ORG</a>, IF YOU WANT TO MAKE A DONATION GO TO THEIR WEBSITE!!!!!!</h3>
+                <p>Quick Links</p>
+                <div>
+                    {/* <a href='/'>Home</a> */}
+                    <Link to='/'>Home</Link>
+                    <Link to='/map'>Map Page</Link>
+                </div>
             </div>
             <div className='header-top'>
                 <div className='header-top-email'>
@@ -251,29 +252,29 @@ function Header(){
                         <a href='#'>Home</a>
                     </div>
                     <div>
-                        <a href='#'>Home</a>
+                        <a href='#'>Find Food</a>
                     </div>
                     <div>
-                        <a href='#'>Home</a>
+                        <a href='#'>Get Help</a>
                         <button>➔</button>
                     </div>
                     <div>
-                        <a href='#'>Home</a>
+                        <a href='#'>Take Action</a>
                         <button>➔</button>
                     </div>
                     <div>
-                        <a href='#'>Home</a>
+                        <a href='#'>Volunteer</a>
                         <button>➔</button>
                     </div>
                     <div>
-                        <a href='#'>Home</a>
+                        <a href='#'>Our Story</a>
                         <button>➔</button>
                     </div>
                     <div>
-                        <a href='#'>Home</a>
+                        <a href='#'>Donate</a>
                     </div>
                     <div>
-                        <a href='#'>Home</a>
+                        <a href='#'>Partner Portal</a>
                     </div>
                 </div>
             </div>
